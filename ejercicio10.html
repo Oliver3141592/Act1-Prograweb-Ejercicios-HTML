@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA CONVERTIDORA</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>CALCULADORA: Celsius-Fahrenheit</h1>
+        <p class="subtitulo">Calculadora de grados Celsius a Fahrenheit</p>
+
+        <form class="formulario" id="formulario-conversion" novalidate>
+            <div class="grupo-formulario">
+                <label for="temperatura">Temperatura (en grados celsius):</label>
+                <input type="number" id="temperatura" step="any" placeholder="Ingresa solo la cantidad, Ej: 24.8">
+            </div>
+
+            <p id="mensaje-error" class="mensaje-error"></p>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <div class="cuadro-prueba">
+            <h2>Formula:</h2>
+            <p><code>F=(C×9/5)+32</code></p>
+        </div>
+
+        <div class="resultados">
+            <label for="resultado">Resultado:</label>
+            <textarea id="resultado" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="js/ejercicio10.js"></script>
+</body>
+</html>
