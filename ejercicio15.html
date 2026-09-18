@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>CALIFICACIONES DE ESTUDIANTES</h1>
+        <p class="subtitulo">Agrega estudiantes con su calificación y calcula el promedio, el mayor y el menor</p>
+
+        <div class="cuadro-prueba">
+            <h2>Instrucciones:</h2>
+            <p>Ingresa el nombre y la calificación de cada estudiante, presiona "Agregar estudiante" y repite. Cuando termines, presiona "Calcular".</p>
+        </div>
+
+        <form id="formulario-estudiante" novalidate>
+            <div class="grupo-formulario">
+                <label for="input-nombre">Nombre del estudiante:</label>
+                <input type="text" id="input-nombre" placeholder="Ejemplo: Juan">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="input-calificacion">Calificación:</label>
+                <input type="text" id="input-calificacion" placeholder="Ejemplo: 85">
+            </div>
+
+            <p id="mensaje-error" class="mensaje-error"></p>
+
+            <button type="submit">Agregar estudiante</button>
+        </form>
+
+        <div class="lista-estudiantes">
+            <h2>Estudiantes agregados:</h2>
+            <ul id="lista-estudiantes"></ul>
+        </div>
+
+        <br>
+        <button id="boton-calcular" type="button">Calcular</button>
+
+        <div class="resultados">
+            <label for="resultado-promedio">Calificación promedio:</label>
+            <textarea id="resultado-promedio" readonly></textarea>
+
+            <label for="resultado-mayor">Estudiante con calificación más alta:</label>
+            <textarea id="resultado-mayor" readonly></textarea>
+
+            <label for="resultado-menor">Estudiante con calificación más baja:</label>
+            <textarea id="resultado-menor" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>
