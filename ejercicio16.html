@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Funciones Flecha</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+    <!-- Librería SweetAlert2 para mostrar mensajes de error -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>CALCULADORA</h1>
+        <p class="subtitulo">Ingresa dos números y elige la operación que quieras realizar</p>
+
+        <div class="cuadro-prueba">
+            <h2>Instrucciones:</h2>
+            <p>Escribe un número en cada campo y presiona el botón de la operación que deseas calcular.</p>
+        </div>
+
+        <form id="formulario-calculadora" novalidate>
+            <div class="grupo-formulario">
+                <label for="numero1">Número 1:</label>
+                <input type="text" id="numero1" placeholder="Ejemplo: 10">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="numero2">Número 2:</label>
+                <input type="text" id="numero2" placeholder="Ejemplo: 5">
+            </div>
+
+            <div class="grupo-botones">
+                <button type="button" onclick="calcularOperacion('suma')">Sumar (+)</button>
+                <button type="button" onclick="calcularOperacion('resta')">Restar (-)</button>
+                <button type="button" onclick="calcularOperacion('multiplicacion')">Multiplicar (×)</button>
+                <button type="button" onclick="calcularOperacion('division')">Dividir (÷)</button>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>
