@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERTIDOR Km-Mi</title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+</head>
+
+    
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>ORDENAR NUMEROS</h1>
+        <p class="subtitulo">Con este formulario los numeros que ingreses se ordenarán en mayor, menor y promedio</p>
+        
+        <!--NOTA PROPIA:
+        Un form agrupa campos que se envían juntos
+        en el siguiente caso se probará fusionando los forms para resolver 
+        el problema de actualización del ejercicio anterior al dar enter 
+        cuando estamos en el campo "pesos", se puede decir que este ejercicio
+        es más correcto que el anterior
+        -->
+
+        
+
+
+       
+
+        <form class="tasa-cambio" id="formulario-numeros" novalidate>
+            <div class="cuadro-prueba">
+                <h2>Instrucciones:</h2>
+                <p>ingresa los numeros que deseas ordenar separandolos con  una coma ","</p>
+            </div>
+
+            <div class="formulario" id="formulario-conversion" novalidate>
+                <br>
+                <div class="grupo-formulario">
+                    <label for="input-numeros">Ingresa los numero separados por comas:</label>
+                    <input type="text" id="input-numeros"  placeholder="Ejemplo: 3,10,23,24,123" required>
+                </div>
+                <p id="mensaje-error" class="mensaje-error"></p>    
+                
+            </div>
+
+            <div class="resultados-mayor-menor">
+                <label for="resultado-mayor">Numero mayor:</label>
+                <br>
+                <textarea id="resultado-mayor" readonly></textarea>
+                <br>
+                <br>
+                <label for="resultado-menor">Numero menor:</label>
+                <br>
+                <textarea id="resultado-menor" readonly></textarea>
+
+                <br>
+                <br>
+                <label for="resultado-promedio">Promedio:</label>
+                <br>
+                <textarea id="resultado-promedio" readonly></textarea>
+            </div>
+
+
+            <br>
+            <button type="submit">Verificar</button>
+        </form>
+
+
+        
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>
